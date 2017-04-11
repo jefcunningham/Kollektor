@@ -35,10 +35,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="137.18140929535232"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="elo-44-ChA">
             <objects>
-                <viewController id="eox-Y3-q9G" sceneMemberID="viewController">
+                <viewController id="eox-Y3-q9G" customClass="GameViewController" customModule="Kollektor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZAe-e5-4kn"/>
                         <viewControllerLayoutGuide type="bottom" id="b2h-fK-Kew"/>
@@ -47,22 +47,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WQ2-gE-D0u">
-                                <rect key="frame" x="47" y="84" width="280" height="200"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interrupted.png" translatesAutoresizingMaskIntoConstraints="NO" id="WQ2-gE-D0u">
+                                <rect key="frame" x="47.5" y="84" width="280" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Fko-ne-8G2"/>
                                     <constraint firstAttribute="width" constant="280" id="ZIk-F5-DQ6"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vyg-3G-Web">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of thing..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vyg-3G-Web">
                                 <rect key="frame" x="47.5" y="304" width="280" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XP0-0t-sKW">
-                                <rect key="frame" x="172" y="354" width="30" height="30"/>
+                                <rect key="frame" x="172.5" y="354" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="eox-Y3-q9G" eventType="touchUpInside" id="pi6-K3-NrC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -78,10 +81,22 @@
                     </view>
                     <navigationItem key="navigationItem" id="agy-wH-h0P">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="camera" id="9Wg-jD-Y6f"/>
-                            <barButtonItem title="Photos" id="d4d-Yc-KPY"/>
+                            <barButtonItem systemItem="camera" id="9Wg-jD-Y6f">
+                                <connections>
+                                    <action selector="cameraTapped:" destination="eox-Y3-q9G" id="WQh-YW-vhO"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Photos" id="d4d-Yc-KPY">
+                                <connections>
+                                    <action selector="photosTapped:" destination="eox-Y3-q9G" id="nu1-TE-tQo"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="gameImageView" destination="WQ2-gE-D0u" id="pzl-S9-ATQ"/>
+                        <outlet property="titleTextField" destination="Vyg-3G-Web" id="WRT-tE-qAa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iuh-c2-aw9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,7 +118,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O1C-h2-fGV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.59999999999999" y="791.15442278860576"/>
+            <point key="canvasLocation" x="214" y="137"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="interrupted.png" width="512" height="512"/>
+    </resources>
 </document>

@@ -13,6 +13,8 @@
 		8E94E1701E9C6BD10024B200 /* Kollektor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E94E16E1E9C6BD10024B200 /* Kollektor.xcdatamodeld */; };
 		8E94E1721E9C6BD10024B200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E94E1711E9C6BD10024B200 /* Assets.xcassets */; };
 		8E94E1751E9C6BD10024B200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E94E1731E9C6BD10024B200 /* LaunchScreen.storyboard */; };
+		8E94E17D1E9CC5A90024B200 /* interrupted.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E94E17C1E9CC5A90024B200 /* interrupted.png */; };
+		8E94E17F1E9CC6650024B200 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E94E17E1E9CC6650024B200 /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8E94E1711E9C6BD10024B200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E94E1741E9C6BD10024B200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E94E1761E9C6BD10024B200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E94E17C1E9CC5A90024B200 /* interrupted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = interrupted.png; sourceTree = "<group>"; };
+		8E94E17E1E9CC6650024B200 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		8E94E1661E9C6BD10024B200 /* Kollektor */ = {
 			isa = PBXGroup;
 			children = (
+				8E94E17C1E9CC5A90024B200 /* interrupted.png */,
 				8E94E1671E9C6BD10024B200 /* AppDelegate.swift */,
 				8E94E1691E9C6BD10024B200 /* ViewController.swift */,
+				8E94E17E1E9CC6650024B200 /* GameViewController.swift */,
 				8E94E16B1E9C6BD10024B200 /* Main.storyboard */,
 				8E94E1711E9C6BD10024B200 /* Assets.xcassets */,
 				8E94E1731E9C6BD10024B200 /* LaunchScreen.storyboard */,
@@ -126,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E94E17D1E9CC5A90024B200 /* interrupted.png in Resources */,
 				8E94E1751E9C6BD10024B200 /* LaunchScreen.storyboard in Resources */,
 				8E94E1721E9C6BD10024B200 /* Assets.xcassets in Resources */,
 				8E94E16D1E9C6BD10024B200 /* Main.storyboard in Resources */,
@@ -139,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E94E17F1E9CC6650024B200 /* GameViewController.swift in Sources */,
 				8E94E16A1E9C6BD10024B200 /* ViewController.swift in Sources */,
 				8E94E1701E9C6BD10024B200 /* Kollektor.xcdatamodeld in Sources */,
 				8E94E1681E9C6BD10024B200 /* AppDelegate.swift in Sources */,
